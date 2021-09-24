@@ -1,0 +1,18 @@
+<div class="col-md-4">
+  <label for="">Potions</label>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">X</span>
+    </div>
+    <input type="text"
+  class="form-control"
+  placeholder="Write a potion"
+ [formControl]="potion"
+ [class.is-invalid]="potion.invalid"
+ [class.is-valid]="potion.valid"
+>
+    <div class="invalid-feedback">
+      Potion already exists
+    </div>
+  </div>
+</div>
